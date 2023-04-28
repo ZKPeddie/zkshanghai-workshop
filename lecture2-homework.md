@@ -2,7 +2,7 @@
 
 ## 第1题 转换为bit位 Num2Bits
 
-`
+```
 pragma circom 2.1.4;
  
 include "circomlib/poseidon.circom";
@@ -33,7 +33,7 @@ component main = Example();
     "b": ["1","0","1","1"]
 } */
 
-`
+```
 
 
 
@@ -41,9 +41,9 @@ component main = Example();
 
 
 ## 第2题 判零 IsZero
-`
+```
 
-`
+```
 
 
 
