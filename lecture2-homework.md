@@ -1,5 +1,6 @@
 # 第2课 课后作业
 
+
 ## 第1题 转换为bit位 Num2Bits
 
 ```
@@ -42,10 +43,135 @@ component main = Example();
 
 ## 第2题 判零 IsZero
 ```
+pragma circom 2.1.4;
+
+include "circomlib/poseidon.circom";
+
+template Example () {
+    signal input in;
+    signal input out;
+    
+    signal temp;
+    temp <-- in * (in - 1);
+
+    temp === out;
+}
+
+component main = Example();
+
+/* INPUT = {
+    "in": "1",
+    "out": "1"
+} */
+```
+
+
+
+
+
+
+## 第3题 相等 IsEqual
+```
+pragma circom 2.1.4;
+
+include "circomlib/poseidon.circom";
+
+template Example () {
+    signal input in[2];
+    signal output out;
+
+    signal temp;
+
+    temp <-- in[0] - in[1];
+    
+    out <== temp * (temp -1);
+}
+
+component main = Example();
+
+/* INPUT = {
+    "in": ["1","1"]
+} */
+```
+
+
+
+
+
+
+## 第5题 判负 IsNegative
+```
 
 ```
 
 
 
+
+
+
+## 第6题 少于 LessThan
+```
+
+```
+
+
+
+
+
+
+## 第7题 整数除法 IntegerDivide
+```
+
+```
+
+
+
+
+
+
+## 第2题 判零 IsZero
+```
+
+```
+
+
+
+
+
+
+## 第2题 判零 IsZero
+```
+
+```
+
+
+
+
+
+
+## 第2题 判零 IsZero
+```
+
+```
+
+
+
+
+
+
+## 第2题 判零 IsZero
+```
+
+```
+
+
+
+
+
+
+## 第2题 判零 IsZero
+```
+
+```
 
 
