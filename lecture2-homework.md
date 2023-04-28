@@ -99,9 +99,55 @@ component main = Example();
 
 
 
-## 第5题 判负 IsNegative
+## 第4题 选择器 Selector
+```
+pragma circom 2.1.4;
+
+include "circomlib/poseidon.circom";
+
+template Example () {
+    signal input in[3];
+    signal input index;
+    signal output out;
+
+    signal temp;
+    temp <-- in[index];
+
+    out <== temp;
+}
+
+component main = Example();
+
+/* INPUT = {
+    "in": ["1","2","3"],
+    "index": "1",
+    "out": "2"
+} */
 ```
 
+
+
+
+
+
+## 第5题 判负 IsNegative
+```
+pragma circom 2.1.4;
+
+include "circomlib/poseidon.circom";
+
+template Example () {
+    signal input in;
+    signal output out;
+
+}
+
+component main = Example();
+
+/* INPUT = {
+    "in": "1",
+    "out": "0"
+} */
 ```
 
 
@@ -111,7 +157,22 @@ component main = Example();
 
 ## 第6题 少于 LessThan
 ```
+pragma circom 2.1.4;
 
+include "circomlib/poseidon.circom";
+
+template Example () {
+    signal input in;
+    signal output out;
+
+}
+
+component main = Example();
+
+/* INPUT = {
+    "in": "1",
+    "out": "0"
+} */
 ```
 
 
@@ -121,57 +182,27 @@ component main = Example();
 
 ## 第7题 整数除法 IntegerDivide
 ```
+pragma circom 2.1.4;
 
+include "circomlib/poseidon.circom";
+
+template Example () {
+    signal input in;
+    signal output out;
+
+}
+
+component main = Example();
+
+/* INPUT = {
+    "in": "1",
+    "out": "0"
+} */
 ```
 
 
 
 
 
-
-## 第2题 判零 IsZero
-```
-
-```
-
-
-
-
-
-
-## 第2题 判零 IsZero
-```
-
-```
-
-
-
-
-
-
-## 第2题 判零 IsZero
-```
-
-```
-
-
-
-
-
-
-## 第2题 判零 IsZero
-```
-
-```
-
-
-
-
-
-
-## 第2题 判零 IsZero
-```
-
-```
 
 
