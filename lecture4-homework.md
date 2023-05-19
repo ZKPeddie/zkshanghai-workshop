@@ -1,7 +1,7 @@
 # 第4课 课后作业
 
 ## 第1题 SkToPk
-
+```
 pragma circom 2.1.4;
  
 include "circomlib/poseidon.circom";
@@ -21,13 +21,13 @@ component main = SkToPk();
 /* INPUT = {
     "sk": "5"
 } */
-
+```
 
 
 
 
 ## 第2题 Sign
-
+```
 pragma circom 2.1.4;
  
 include "circomlib/poseidon.circom";
@@ -61,4 +61,4 @@ component main {public [pk, m]}= Sign();
     "pk": "19065150524771031435284970883882288895168425523179566388456001105768498065277",
     "m": "1"
 } */
-
+```
